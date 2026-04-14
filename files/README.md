@@ -84,7 +84,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-Then open http://localhost:8501, enter your API keys in the sidebar, and click
+Then open http://localhost:8501/, enter your API keys in the sidebar, and click
 **▶ Generate Full Pipeline**.
 
 ## Project Structure
