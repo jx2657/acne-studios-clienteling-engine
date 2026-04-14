@@ -53,10 +53,32 @@ def generate_blog(product: str, client: OpenAI | None) -> str:
         "Scandinavian minimalist voice. No fluff. No clichés."
     )
     user = (
-        f"Write a luxury fashion editorial blog post about '{product}' for Acne Studios. "
-        "Start with a 5-point outline, then write the full draft below it (400-600 words). "
-        "Include: a compelling headline, the design philosophy behind the piece, "
-        "how it fits into contemporary culture, and a closing that invites the reader into the brand world."
+        f"""
+    Create a blog post for Acne Studios about "{product}".
+
+    Structure:
+    1. Blog Outline:
+       - 4–5 concise bullet points (VERY brief)
+
+    2. Short-form Blog Draft:
+       - A complete editorial blog based on the outline
+
+    STRICT LENGTH REQUIREMENT:
+    - The TOTAL word count (outline + draft combined) MUST be between 500 and 600 words
+    - Target approximately 550–600 words
+    - The outline should be very short (max 60–80 words total)
+    - The draft should be the majority of the content
+    - The draft MUST NOT feel compressed or overly minimal
+
+    Content requirements:
+    - Include a compelling headline
+    - Highlight design philosophy
+    - Connect to contemporary culture
+    - End with a refined, brand-oriented closing
+
+    Tone:
+    Minimalist, poetic, Scandinavian luxury, editorial.
+    """
     )
     try:
         resp = c.chat.completions.create(
