@@ -31,7 +31,22 @@ and analyses campaign performance — all from a single Streamlit interface.
                                │  └─ performance_log.json│
                                │  data/content/*.json    │
                                └─────────────────────────┘
-```
+
+The system follows a modular, layered architecture:
+
+1. Presentation Layer
+   - Streamlit UI (app.py)
+   - User inputs, pipeline trigger, results display
+
+2. Application Layer
+   - content_generator.py (LLM + image generation)
+   - analytics.py (A/B testing, performance simulation, AI insights)
+
+3. Integration Layer
+   - crm_client.py (HubSpot API integration)
+
+4. Data Layer
+   - Local JSON storage (campaign logs, performance logs, generated content)
 
 ## Pipeline Flow
 
