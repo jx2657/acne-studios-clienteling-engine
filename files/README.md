@@ -86,26 +86,18 @@ The system follows a modular, layered architecture:
 
 ```# 1. Clone / unzip the project
 cd acne_clienteling
-
 # 2. Install dependencies
 pip install -r requirements.txt
-
 # 3. Launch
 streamlit run app.py
-```
+
 ## Running with Pycharm
-
-```# 1. Open the project folder in PyCharm
-
+# 1. Open the project folder in PyCharm
 # 2. Open the built-in terminal
-
 # 3. Install dependencies
 pip install -r requirements.txt
-
 # 4. Run the app
-streamlit run app.py
-```
-
+streamlit run app.p```
 
 Then open http://localhost:8501, enter your API keys in the sidebar, and click
 **▶ Generate Full Pipeline**.
